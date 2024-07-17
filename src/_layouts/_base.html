@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'head' %}
+  </head>
+  <body>
+    <a id="skipLink" class="skip-to-main" href="#main">Skip to Main Content</a>
+    {{ content }} {% include 'components/back-to-top' %}
+    <script src="/bundle.js"></script>
+  </body>
+</html>

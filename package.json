@@ -1,0 +1,28 @@
+{
+  "name": "pelican-theme-template",
+  "version": "1.0.0",
+  "description": "Template repository for creating pelican themes.",
+  "main": "index.js",
+  "scripts": {
+    "lint:css": "stylelint **/*.{css,scss}",
+    "lint:css:fix": "stylelint **/*.{css,scss} --fix",
+    "lint:js": "eslint **/*.js",
+    "lint:js:fix": "eslint **/*.js --fix",
+    "format:check": "prettier --check .",
+    "format": "prettier --write --ignore-unknown .",
+    "clean": "rimraf dist",
+    "develop": "eleventy --serve",
+    "build": "rimraf dist && eleventy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@la-ots/eslint-config": "^1.0.1",
+    "@la-ots/pelican": "^2.2.1",
+    "@la-ots/prettier-config": "^1.0.0",
+    "@la-ots/stylelint-config": "^1.0.0",
+    "@shopify/prettier-plugin-liquid": "^1.5.0",
+    "rimraf": "^6.0.1"
+  }
+}
