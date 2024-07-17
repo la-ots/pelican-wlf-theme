@@ -1,0 +1,11 @@
+# src
+src
+
+# css
+css
+
+# rc files
+.eslintrc.js
+.stylelintrc.js
+.prettierrc.js
+eleventy.config.js

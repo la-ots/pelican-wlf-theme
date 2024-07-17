@@ -1,7 +1,14 @@
 {
-  "name": "pelican-theme-template",
+  "name": "@la-ots/pelican-wlf-theme",
   "version": "1.0.0",
-  "description": "Template repository for creating pelican themes.",
+  "description": "Louisiana Department of Wildlife and Fisheries theme for the Pelican Design System.",
+  "license": "CC0-1.0",
+  "style": "css/wlf-theme.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/la-ots/pelican-wlf-theme.git"
+  },
+  "bugs": "https://githuib.com/la-ots/pelican-wlf-theme/issues",
   "main": "index.js",
   "scripts": {
     "lint:css": "stylelint **/*.{css,scss}",
@@ -12,10 +19,9 @@
     "format": "prettier --write --ignore-unknown .",
     "clean": "rimraf dist",
     "develop": "eleventy --serve",
-    "build": "rimraf dist && eleventy"
+    "build": "rimraf dist && eleventy",
+    "build:production": "rimraf dist && copyfiles css/wlf-theme.css dist"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@la-ots/eslint-config": "^1.0.1",
@@ -23,6 +29,10 @@
     "@la-ots/prettier-config": "^1.0.0",
     "@la-ots/stylelint-config": "^1.0.0",
     "@shopify/prettier-plugin-liquid": "^1.5.0",
+    "copyfiles": "^2.4.1",
     "rimraf": "^6.0.1"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
