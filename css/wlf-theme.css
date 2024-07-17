@@ -126,29 +126,67 @@
   --theme-gray-900: #324348;
   --theme-gray-black: #000;
 
-  /* 2. Assign the semantic colors from a color in the preceding categories */
+  /* LDWF */
 
-  /* semantic colors */
+  /* primary colors */
 
-  --theme-primary: var(--theme-primary-800);
-  --theme-secondary: var(--theme-secondary-700);
+  --wlf-primary-green: #455a21;
+  --wlf-primary-khaki: #eee1c6;
+
+  /* accent colors */
+
+  --wlf-accent-black: #231f20;
+  --wlf-accent-sage-green: #748544;
+  --wlf-accent-dark-cream: #f7d2ad;
+  --wlf-accent-cream: #f1eadf;
+  --wlf-accent-brown: #79614d;
+  --wlf-accent-taupe: #a8a18c;
+  --wlf-accent-dark-brown: #58412f;
+  --wlf-accent-charcoal-grey: #736a62;
+  --wlf-accent-almond: #b99c6a;
+  --wlf-accent-brick-red: #8f3c1f;
+  --wlf-accent-pumpkin: #da7627;
+  --wlf-accent-mustard: #bba330;
+  --wlf-accent-midnight-blue: #475d6c;
+  --wlf-accent-smoky-blue: #82929f;
+  --wlf-accent-eggplant: #6e5261;
+  --wlf-accent-sand: #f7f5f2;
+
+  /* 
+   * 2.1 Assign the semantic colors from a color in the preceeding categories
+   * semantic colors 
+   */
+
+  /* 
+   * 2.2 Assign the LDWF semantic colors from a color in the preceeding categories
+   * semantic colors
+   */
+
+  --theme-primary: var(--wlf-primary-green);
+  --theme-secondary: var(--wlf-accent-eggplant);
   --theme-accent: var(--theme-accent-500);
   --theme-success: var(--theme-success-800);
   --theme-info: var(--theme-info-800);
   --theme-warning: var(--theme-warning-500);
   --theme-danger: var(--theme-danger-800);
-  --theme-link-color: var(--theme-info-800);
+  --theme-link-color: var(--wlf-accent-brick-red);
   --theme-ui: var(--theme-gray-600);
   --theme-ui-light: var(--theme-gray-300);
   --theme-ui-priority: var(--theme-link-color);
   --theme-text-normal: var(--theme-gray-700);
-  --theme-body-bg: var(--theme-gray-50);
+  --theme-body-bg: var(--wlf-accent-sand);
   --bs-body-color: var(--theme-gray-900);
   --bs-body-bg: var(--theme-body-bg);
+  --bs-link-color: var(--theme-link-color);
+  --bs-nav-link-color: var(--bs-link-color);
+  --bs-link-hover-color: var(--bs-link-color);
+  --bs-link-color-rgb: 143, 60, 31;
+  --bs-link-hover-color-rgb: 143, 60, 31;
 
-  /* 3. Set properties which are shared */
-
-  /* borders */
+  /* 
+   * 3. Set properties which are shared
+   * borders 
+   */
 
   --theme-border-color: var(--theme-ui);
   --theme-border-color-lighter: var(--theme-ui-light);
@@ -156,75 +194,76 @@
   --theme-border-style: solid;
   --bs-border-color: var(--theme-border-color);
 
-  /* 4. Set the properties for Bootstrap and Pelican items */
-
-  /* alerts */
+  /* 
+   * 4. Set the properties for Bootstrap and Pelican items
+   * alerts 
+   */
 
   --theme-alert-border-radius: 0.25rem;
 
-  /* success */
+  /* alert success */
   --theme-alert-success-text-color: var(--theme-success-900);
   --theme-alert-success-bg-color: var(--theme-success-100);
   --theme-alert-success-border-color: var(--theme-success-900);
 
-  /* info */
+  /* alert info */
   --theme-alert-info-text-color: var(--theme-info-900);
   --theme-alert-info-bg-color: var(--theme-info-100);
   --theme-alert-info-border-color: var(--theme-info-900);
 
-  /* warning */
+  /* alert warning */
   --theme-alert-warning-text-color: var(--theme-warning-900);
   --theme-alert-warning-bg-color: var(--theme-warning-100);
   --theme-alert-warning-border-color: var(--theme-warning-900);
 
-  /* danger */
+  /* alert danger */
   --theme-alert-danger-text-color: var(--theme-danger-900);
   --theme-alert-danger-bg-color: var(--theme-danger-100);
   --theme-alert-danger-border-top-color: var(--theme-danger-900);
 
   /* badges, chips */
 
-  /* primary */
+  /* badge primary */
   --theme-badge-chip-primary-bg-color: var(--theme-primary);
   --theme-badge-chip-primary-text-color: var(--theme-gray-white);
   --theme-badge-chip-primary-bg-dim-color: var(--theme-primary-900);
   --theme-badge-chip-primary-text-dim-color: var(--theme-primary-100);
 
-  /* secondary */
+  /* badge secondary */
   --theme-badge-chip-secondary-bg-color: var(--theme-secondary);
   --theme-badge-chip-secondary-text-color: var(--theme-gray-white);
   --theme-badge-chip-secondary-bg-dim-color: var(--theme-secondary-900);
   --theme-badge-chip-secondary-text-dim-color: var(--theme-secondary-100);
 
-  /* accent */
+  /* badge accent */
   --theme-badge-chip-accent-bg-color: var(--theme-accent);
   --theme-badge-chip-accent-text-color: var(--theme-gray-black);
   --theme-badge-chip-accent-bg-dim-color: var(--theme-accent-100);
   --theme-badge-chip-accent-text-dim-color: var(--theme-accent-900);
 
-  /* ui */
+  /* badge ui */
   --theme-badge-chip-ui-bg-color: var(--theme-ui);
   --theme-badge-chip-ui-text-color: var(--theme-gray-white);
   --theme-badge-chip-ui-bg-dim-color: var(--theme-ui-900);
   --theme-badge-chip-ui-text-dim-color: var(--theme-ui-100);
 
-  /* info */
+  /* badge info */
   --theme-badge-chip-info-bg-color: var(--theme-info);
   --theme-badge-chip-info-text-color: var(--theme-gray-white);
   --theme-badge-chip-info-bg-dim-color: var(--theme-info-900);
   --theme-badge-chip-info-text-dim-color: var(--theme-info-100);
 
-  /* success */
+  /* badge success */
   --theme-badge-chip-success-bg-color: var(--theme-success);
   --theme-badge-chip-success-text-color: var(--theme-gray-white);
   --theme-badge-chip-success-bg-dim-color: var(--theme-success-900);
   --theme-badge-chip-success-text-dim-color: var(--theme-success-100);
 
-  /* warning */
+  /* badge warning */
   --theme-badge-chip-warning-bg-color: var(--theme-warning);
   --theme-badge-chip-warning-text-color: var(--bs-black);
 
-  /* danger */
+  /* badge danger */
   --theme-badge-chip-danger-bg-color: var(--theme-danger);
   --theme-badge-chip-danger-text-color: var(--theme-gray-white);
 
@@ -263,40 +302,42 @@
 
   --theme-focus-color: #2491ff;
 
-  /* feature blocks */
+  /* 
+   * feature blocks 
+   * you may need still need to change the classes on buttons 
+   */
 
-  /* you may need still need to change the classes on buttons */
-
-  /* CTA Single */
+  /* feature - cta single */
   --theme-feature-cta-single-bg-color: var(--theme-gray-white);
   --theme-feature-cta-single-text-color: var(--theme-primary);
 
-  /* CTA Double */
+  /* feature - cta double */
   --theme-feature-cta-double-bg-color: var(--theme-primary);
   --theme-feature-cta-double-text-color: var(--theme-gray-white);
 
-  /* Icons Text */
+  /* feature - icons */
   --theme-feature-icons-text-bg-color: var(--theme-secondary);
   --theme-feature-icons-text-text-color: var(--theme-gray-white);
 
-  /* Languages */
+  /* feature - languages */
   --theme-feature-languages-bg-color: var(--theme-accent);
   --theme-feature-languages-text-color: var(--theme-primary);
   --theme-feature-languages-item-text-color: var(--theme-primary);
   --theme-feature-languages-item-bg-color: var(--theme-gray-white);
 
-  /* Many Icons Text */
+  /* feature - many icons */
   --theme-feature-many-icons-text-bg-color: var(--theme-primary);
   --theme-feature-many-icons-text-color: var(--theme-gray-white);
 
-  /* Set */
+  /* feature - set */
   --theme-feature-set-bg-color: var(--theme-gray-white);
   --theme-feature-set-text-color: var(--theme-primary);
   --theme-feature-set-icon-color: var(--theme-primary);
 
-  /* forms */
-
-  /* forms are not yet fully enabled with CSS Variables */
+  /* 
+   * forms
+   * forms are not yet fully enabled with CSS Variables 
+   */
 
   --theme-form-border-color: var(--theme-text-normal);
   --theme-form-disabled-bg-color: var(--theme-ui-light);
@@ -311,41 +352,46 @@
   /* form validation */
   --theme-form-validation-error-muted-color: var(--theme-danger-200);
 
-  /* footers */
+  /* 
+   * footers
+   * you may need still need to change the classes on buttons 
+   */
 
-  /* you may need still need to change the classes on buttons */
-
+  /* footer basic */
   --theme-footer-basic-bg-color: var(--theme-gray-black);
   --theme-footer-basic-link-color: var(--theme-gray-white);
+
+  /* footer utility */
   --theme-footer-utility-bg-color: var(--theme-primary);
   --theme-footer-utility-link-color: var(--theme-accent);
   --theme-footer-utility-divider-color: var(--theme-primary-100);
 
-  /* hero blocks */
+  /* 
+   * hero blocks
+   * you may need still need to change the classes on buttons 
+   */
 
-  /* you may need still need to change the classes on buttons */
-
-  /* hero dual pane */
+  /* hero - dual pane */
   --theme-hero-dual-pane-bg-color: var(--theme-primary);
   --theme-hero-dual-pane-overlay-left-bg-color: var(--theme-primary);
   --theme-hero-dual-pane-overlay-right-bg-color: var(--theme-secondary);
   --theme-hero-dual-pane-text-color: var(--theme-gray-white);
 
-  /* hero single pane */
+  /* hero - single pane */
   --theme-hero-single-pane-bg-color: var(--theme-primary);
   --theme-hero-single-pane-header-text-color: var(--theme-gray-white);
   --theme-hero-single-pane-small-text-color: var(--theme-gray-white);
 
-  /* hero boxed photo */
+  /* hero - boxed */
   --theme-hero-boxed-photo-bg-color: var(--theme-gray-white);
   --theme-hero-boxed-photo-text-color: var(--theme-primary);
 
-  /* hero color toned */
+  /* hero - color toned */
   --theme-hero-color-toned-bg-color: var(--theme-secondary);
   --theme-hero-color-toned-overlay-opacity: 0.85;
   --theme-hero-color-toned-text-color: var(--theme-gray-white);
 
-  /* hero textbox over photo */
+  /* hero - textbox over photo */
   --theme-textbox-over-photo-bg-color: var(--theme-primary);
   --theme-textbox-over-photo-overlay-opacity: 0.5;
   --theme-textbox-over-photo-text-color: var(--theme-gray-white);
@@ -406,6 +452,9 @@
   --theme-popover-header-bg-color: var(--theme-table-stripe-bg);
   --theme-popover-bg: var(--theme-card-bg-color);
   --theme-popover-border-color: var(--theme-card-border-color);
+
+  /* tooltips */
+
   --theme-tooltip-color: var(--theme-gray-white);
   --theme-tooltip-bg: var(--theme-gray-black);
 
@@ -422,15 +471,15 @@
 
   /* sidebar & topbar */
 
-  --theme-topbar-bg-color: var(--bs-black);
+  --theme-topbar-bg-color: var(--theme-primary);
   --theme-topbar-text-color: var(--bs-white);
   --theme-sidebar-brand-bg-color: var(--theme-topbar-bg-color);
-  --theme-sidebar-wrapper-bg-color: var(--theme-primary);
+  --theme-sidebar-wrapper-bg-color: var(--wlf-accent-cream);
   --theme-sidebar-header-border-color: var(--theme-primary-900);
-  --theme-sidebar-link-color: var(--bs-white);
+  --theme-sidebar-link-color: var(--theme-link-color);
   --theme-sidebar-link-hover-color: var(--theme-gray-white);
-  --theme-sidebar-item-bg-color: var(--theme-info);
-  --theme-sidebar-submenu-bg-color: var(--theme-primary-900);
+  --theme-sidebar-item-bg-color: var(--theme-link-color);
+  --theme-sidebar-submenu-bg-color: #e5ded4;
 
   /* skip to main */
 
@@ -448,31 +497,31 @@
 
   /* toasts */
 
-  /* success */
+  /* toast success */
   --theme-toast-header-success-bg-color: var(--theme-success-100);
   --theme-toast-header-success-text-color: var(--theme-success-900);
   --theme-toast-bg-success-color: var(--bs-white);
   --theme-toast-text-success-color: var(--theme-text-normal);
 
-  /* info */
+  /* toast info */
   --theme-toast-header-info-bg-color: var(--theme-info-100);
   --theme-toast-header-info-text-color: var(--theme-info-900);
   --theme-toast-bg-info-color: var(--bs-white);
   --theme-toast-text-info-color: var(--theme-text-normal);
 
-  /* warning */
+  /* toast warning */
   --theme-toast-header-warning-bg-color: var(--theme-warning-100);
   --theme-toast-header-warning-text-color: var(--theme-warning-900);
   --theme-toast-bg-warning-color: var(--bs-white);
   --theme-toast-text-warning-color: var(--theme-text-normal);
 
-  /* danger */
+  /* toast danger */
   --theme-toast-header-danger-bg-color: var(--theme-danger-100);
   --theme-toast-header-danger-text-color: var(--theme-danger-900);
   --theme-toast-bg-danger-color: var(--bs-white);
   --theme-toast-text-danger-color: var(--theme-text-normal);
 
-  /* shadow */
+  /* toast shadow */
   --theme-toast-shadow-color: var(--theme-gray-200);
 
   /* toc */
@@ -503,25 +552,29 @@
   --bs-heading-color: var(--theme-text-headings-color);
 }
 
-/* Rules
- * -----------------------------------------------
+/*
+ * rules begin
+ * -------------------------------- 
  */
 
-/* 5. Apply colors to the buttons */
+/* 
+ * 5. Apply colors to the buttons
+ * buttons
+ */
 
 .btn-primary {
   --bs-btn-color: var(--bs-white);
   --bs-btn-bg: var(--theme-primary);
   --bs-btn-border-color: var(--theme-primary);
   --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: var(--theme-primary-700);
-  --bs-btn-hover-border-color: var(--theme-primary-700);
+  --bs-btn-hover-bg: #374127;
+  --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
   --bs-btn-active-color: var(--bs-white);
-  --bs-btn-active-bg: var(--theme-primary-800);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
   --bs-btn-active-border-color: var(--theme-primary-800);
   --bs-btn-disabled-color: var(--bs-white);
-  --bs-btn-disabled-bg: var(--theme-primary-200);
-  --bs-btn-disabled-border-color: var(--theme-primary-200);
+  --bs-btn-disabled-bg: #86936e;
+  --bs-btn-disabled-border-color: var(--bs-btn-disabled-bg);
 }
 
 .btn-secondary {
@@ -529,14 +582,14 @@
   --bs-btn-bg: var(--theme-secondary);
   --bs-btn-border-color: var(--theme-secondary);
   --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: var(--theme-secondary-600);
-  --bs-btn-hover-border-color: var(--theme-secondary-600);
+  --bs-btn-hover-bg: #493640;
+  --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
   --bs-btn-active-color: var(--bs-white);
-  --bs-btn-active-bg: var(--theme-secondary-800);
-  --bs-btn-active-border-color: var(--theme-secondary-800);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-border-color: var(--bs-btn-active-bg);
   --bs-btn-disabled-color: var(--bs-white);
-  --bs-btn-disabled-bg: var(--theme-secondary-200);
-  --bs-btn-disabled-border-color: var(--theme-secondary-200);
+  --bs-btn-disabled-bg: #a88a99;
+  --bs-btn-disabled-border-color: var(--bs-btn-disabled-bg);
 }
 
 .btn-accent {
@@ -570,10 +623,10 @@
 }
 
 .btn-link {
-  --bs-btn-color: var(--theme-info);
+  --bs-btn-color: var(--theme-link-color);
   --bs-btn-bg: var(--bs-white);
   --bs-btn-border-color: var(--bs-white);
-  --bs-btn-hover-color: var(--theme-info);
+  --bs-btn-hover-color: var(--theme-link-color);
   --bs-btn-hover-bg: var(--theme-info-50);
   --bs-btn-hover-border-color: var(--theme-info-50);
   --bs-btn-active-color: var(--theme-info-900);
@@ -612,6 +665,44 @@
   --bs-btn-disabled-color: var(--bs-white);
   --bs-btn-disabled-bg: var(--theme-danger-200);
   --bs-btn-disabled-border-color: var(--theme-danger-200);
+}
+
+/* 5.1 Apply overrides */
+
+.sidebar-nav-item.active {
+  font-weight: 700;
+}
+
+.sidebar-brand > a {
+  color: var(--theme-topbar-text-color) !important;
+}
+
+.card-body details summary.text-ui-priority {
+  color: var(--theme-link-color) !important;
+}
+
+.card-body details summary.text-ui-priority:hover,
+.toc li a:hover {
+  text-decoration: underline !important;
+}
+
+.checkbox-tile .form-check-input:checked + label,
+.radio-tile .form-check-input:checked + label {
+  background-color: var(--theme-gray-100);
+}
+
+.checkbox-tile .form-check-input:checked + label::before,
+.radio-tile .form-check-input:checked + label::before {
+  background-color: var(--theme-link-color);
+  box-shadow: 0 0 0 0.125rem var(--theme-link-color);
+}
+
+.radio-tile .form-check-input:checked + label::before {
+  background-color: var(--theme-gray-white);
+}
+
+.alert-warning {
+  box-shadow: 0 0.5rem 1rem 0 var(--theme-accent-200);
 }
 
 /* 6. Save file! */
